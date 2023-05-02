@@ -23,18 +23,12 @@ class Netflixer:
             
     def ui(self):
         os.system('cls')
-        ctypes.windll.kernel32.SetConsoleTitleW(f'[NETFLIXER v1.3] - Made by NOTTZACK') 
-        text = '''    
-
-                  _   _      _    __ _ _             _               _             
-                 | \ | |    | |  / _| (_)           | |             | |            
-                 |  \| | ___| |_| |_| |___  __   ___| |__   ___  ___| | _____ _ __ 
-                 | . ` |/ _ \ __|  _| | \ \/ /  / __| '_ \ / _ \/ __| |/ / _ \ '__|
-                 | |\  |  __/ |_| | | | |>  <  | (__| | | |  __/ (__|   <  __/ |   
-                 |_| \_|\___|\__|_| |_|_/_/\_\  \___|_| |_|\___|\___|_|\_\___|_|   
-                                                                   
-                                                                   
-              
+        ctypes.windll.kernel32.SetConsoleTitleW(f'[NETFLIXER v1.3] - MADE BY ! RAMZY 🧡') 
+        text = '''                                         
+                     _  __ ___ _____ ____ __   __ _  __  _____  _  _____  _   __
+                    / |/ // _//_  _// __// /  / /| |/,' /_  _/,' \/_  _/.' \ / /
+                   / || // _/  / / / _/ / /_ / / /  /    / / / o | / / / o // /_
+                  /_/|_//___/ /_/ /_/  /___//_/,'_n_\   /_/  |_,' /_/ /_n_//___/
  '''        
         faded = ''
         red = 40
@@ -45,7 +39,7 @@ class Netflixer:
                 if red > 255:
                     red = 255
         print(center(faded))
-        print(center(f'{Fore.LIGHTYELLOW_EX}\ngithub.com/nottzack Version 1.3\n{Fore.RESET}'))
+        print(center(f'{Fore.LIGHTBLUE_EX}\ngithub.com/nottzack Version 1.3\n{Fore.RESET}'))
     
     def cpmCounter(self):
         while True:
@@ -57,7 +51,7 @@ class Netflixer:
     def updateTitle(self):
         while True:
             elapsed = time.strftime('%H:%M:%S', time.gmtime(time.time() - self.start))
-            ctypes.windll.kernel32.SetConsoleTitleW(f'[NETFLIXER v3] - Hits: {self.hits} | MALOS: {self.bad} | RETENIDOS: {self.retries} | CPM: {self.cpm} | HILOS: {threading.active_count() - 2} | TIEMPO  DE ESPERA: {elapsed}')
+            ctypes.windll.kernel32.SetConsoleTitleW(f'[NETFLIXER v1.3] - VALIDOS: {self.hits} | MALOS: {self.bad} | RETENIDOS: {self.retries} | CPM: {self.cpm} | HILOS: {threading.active_count() - 2} | TIEMPO  DE ESPERA: {elapsed}')
             time.sleep(0.4)
 
     def getProxies(self):
